@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Second Webpage</title>
+</head>
+<body>
+    <!--Container to wrap everything-->
+    <div id="container">
+    <!--Brand of website-->
+    <header>My Website Brand</header>
+    <!--Main Navigation-->
+    <nav>
+    <ul>
+        <li><a href="html-demo2.html">Home</a></li>
+        <li><a href="html-demo2b.html">About</a></li>
+        <li>Gallery</li>
+        <li><a href="html-demo2c.html">Contact</a></li>
+    </ul>
+    </nav><!--end of navigation-->
+    <!--Main Content-->
+    <main>
+    <h1>My Third Heading</h1>
+    <p>My Third Paragraph.</p>
+    <form action="/signup" method="post">
+    <fieldset>
+        <legend>User personal information</legend>
+        <label>Enter your full name</label><br>
+        <input type="text" name="name"><br>
+        <label>Enter your email</label><br>
+        <input type="email" name="email"><br>
+        <lable>Enter your phone</lable><br>
+        <input type="text" name="phone"><br>
+        <br><label>Select your gender</label><br>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female<br>
+        <br><label>How should we contact you?</label><br>
+        <select>
+            <option>Email</option>
+            <option>Phone</option>
+        </select><br>
+        <br>Tell us the reason of your visit today:<br>
+        <textarea rows="5" cols="30"></textarea><br>
+        <input type="submit" value="signup"
+    </fieldset>
+    </form>
+    </main><!--End of Main Content-->
+    <footer>&copy; Copyright 2021</footer>
+
+    </div><!--end of container--> 
+</body>
+</html>
