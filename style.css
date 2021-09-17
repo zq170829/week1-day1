@@ -1,5 +1,5 @@
 header {
-    background:url(central_park.jpg) 0 -150px; /*place image as background*/
+    background:url(images/central_park.jpg) 0 -150px; /*place image as background*/
     background-size: 1500px;
     background-repeat: no-repeat;
     height:400px;/*give header some height to display the background image*/

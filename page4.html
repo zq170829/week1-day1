@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Fourth Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Container to wrap everything-->
+    <div id="container">
+        <!--Brand of website-->
+        <header>My Website Brand</header>
+        <!--Main Navigation-->
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">Gallery</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--end of navigation-->
+        <!--Main Content-->
+        <main>
+            <h1>My Fourth Heading</h1>
+            <p>My Fourth Paragraph.</p>
+            <ul id="album">
+                <!--
+        <li id="photo"><img src="images/winterland1.jpg"></li>
+        <li id="photo"><img src="images/winterland2.jpg"></li>
+        <li id="photo"><img src="images/winterland3.jpg"></li>
+        <li id="photo"><img src="images/winterland4.jpg"></li>
+        <li id="photo"><img src="images/winterland5.jpg"></li>
+        <li id="photo"><img src="images/winterland5.jpg"></li>-->
+            </ul>
+        </main>
+        <!--End of Main Content-->
+        <footer>&copy; Copyright 2021</footer>
+    </div>
+    <!--end of container-->
+    <script>
+        var photos = [];//declare an empty array to store image element
+        var fileNames = [];//declare an empty array to store image file names
+        var imageList = []; //declare en empty array to store html list that contains an image
+        var image; //simple variable not an array
+        var openList = "<li id='photo'>";//declare a variable to contain open list tag
+        var closeList = "</li>"; //declare a variable to contain close list tag
+        //create a loop to create 6 images starting with index of 0
+        for (var i = 0; i < 6; i++) {
+            fileNames.push("winterland" + (i + 1)); //create image file name and store in the array
+            photos.push("<img src = 'images/"+fileName(i)+".jpg'>"); //Assemble file name into image element and store in an array
+            image = openList + photos(i) + closeList;//Assemble image element from array with list element and store in a variable
+            imageList.push(image);//Stote(push) the assembled list codes into an array
+        }
+
+        document.getElementById("album").innerHTML = imageList; //display all six image codes in the array
+    </script>
+</body>
+
+</html>
